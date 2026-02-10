@@ -3,48 +3,101 @@
  */
 public class PrintNumberInWord {   // Save as "PrintNumberInWord.java"
     public static void main(String[] args) {
-        int number = 11;  // Set the value of "number" here!
+        int number = 5;  // Set the value of "number" here!
 
-        // Using nested-if
-
-        if (number == 1) {   // Use == for comparison
-            System.out.println("One from if-else");
-        } else if (number == 2 ) {
-            System.out.println("Two from if-else");
+        // (a) Using nested-if
+        if (number == 1) {
+            System.out.println("ONE");
+        } else if (number == 2) {
+            System.out.println("TWO");
         } else if (number == 3) {
-            System.out.println("Three from if-else");
-        } else if (number == 4){
-            System.out.println("Four from if-else");
-        } else if (number == 5){
-            System.out.println("Five from if-else");
-        } else if (number == 6){
-            System.out.println("Six from if-else");
-        } else if (number == 7){
-            System.out.println("Seven from if-else");
-        } else if (number == 8){
-            System.out.println("Eight from if-else");
-        } else if (number == 9){
-            System.out.println("Nine from if-else");
-        } else if (number == 10){
-            System.out.println("Ten from if-else");
-        }
-        else {
-            System.out.println("Greater than Ten... from if-else");
+            System.out.println("THREE");
+        } else if (number == 4) {
+            System.out.println("FOUR");
+        } else if (number == 5) {
+            System.out.println("FIVE");
+        } else if (number == 6) {
+            System.out.println("SIX");
+        } else if (number == 7) {
+            System.out.println("SEVEN");
+        } else if (number == 8) {
+            System.out.println("EIGHT");
+        } else if (number == 9) {
+            System.out.println("NINE");
+        } else {
+            System.out.println("OTHER");
         }
 
-        // Using switch-case-default
-        switch(number) {
-            case 1 -> System.out.println("One from switch");
-            case 2 -> System.out.println("Two from switch");
-            case 3 -> System.out.println("Three from switch");
-            case 4 -> System.out.println("Four from switch");
-            case 5 -> System.out.println("Five from switch");
-            case 6 -> System.out.println("Six from switch");
-            case 7 -> System.out.println("Seven from switch");
-            case 8 -> System.out.println("Eight from switch");
-            case 9 -> System.out.println("Nine from switch");
-            case 10 -> System.out.println("Ten from switch");
-            default -> System.out.println("Greater than Ten... from switch");
+        // (b) Using switch-case-default
+        switch (number) {
+            case 1:
+                System.out.println("ONE"); break;
+            case 2:
+                System.out.println("TWO"); break;
+            case 3:
+                System.out.println("THREE"); break;
+            case 4:
+                System.out.println("FOUR"); break;
+            case 5:
+                System.out.println("FIVE"); break;
+            case 6:
+                System.out.println("SIX"); break;
+            case 7:
+                System.out.println("SEVEN"); break;
+            case 8:
+                System.out.println("EIGHT"); break;
+            case 9:
+                System.out.println("NINE"); break;
+            default:
+                System.out.println("OTHER");
+        }
+    }
+}
+
+/**
+ * PrintDayInWord using nested-if and switch-case.
+ */
+class PrintDayInWord {   // Save as "PrintDayInWord.java"
+    public static void main(String[] args) {
+        int dayNumber = 5;  // Set the value of "dayNumber" here!
+
+        // (a) Using nested-if
+        if (dayNumber == 0) {
+            System.out.println("Sunday");
+        } else if (dayNumber == 1) {
+            System.out.println("Monday");
+        } else if (dayNumber == 2) {
+            System.out.println("Tuesday");
+        } else if (dayNumber == 3) {
+            System.out.println("Wednesday");
+        } else if (dayNumber == 4) {
+            System.out.println("Thursday");
+        } else if (dayNumber == 5) {
+            System.out.println("Friday");
+        } else if (dayNumber == 6) {
+            System.out.println("Saturday");
+        } else {
+            System.out.println("Not a valid day");
+        }
+
+        // (b) Using switch-case-default
+        switch (dayNumber) {
+            case 0:
+                System.out.println("Sunday"); break;
+            case 1:
+                System.out.println("Monday"); break;
+            case 2:
+                System.out.println("Tuesday"); break;
+            case 3:
+                System.out.println("Wednesday"); break;
+            case 4:
+                System.out.println("Thursday"); break;
+            case 5:
+                System.out.println("Friday"); break;
+            case 6:
+                System.out.println("Saturday"); break;
+            default:
+                System.out.println("Not a valid day");
         }
     }
 }
